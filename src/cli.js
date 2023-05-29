@@ -7,5 +7,5 @@ export const printWelcome = () => {
 export const askName = () => readlineSync.question('May I have your name? ');
 
 export const printGreeting = (name) => {
-  console.log(`Hello! ${name}!`);
+  console.log(`Hello, ${name}!`);
 };
