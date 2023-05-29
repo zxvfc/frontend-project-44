@@ -11,7 +11,7 @@ const runGame = (userName, description, questionsAndAnswers) => {
     }
     console.log('Correct');
   }
-  console.log(`Congratulations, ${userName}`);
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default runGame;
