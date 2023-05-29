@@ -7,6 +7,7 @@ const runGame = (userName, description, questionsAndAnswers) => {
     const usersAnswer = readlineSync.question('Your answer: ');
     if (usersAnswer !== correctAnswer.toString()) {
       console.log(`'${usersAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
+      console.log(`Let's try again, ${userName}!`);
       return;
     }
     console.log('Correct');
