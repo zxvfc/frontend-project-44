@@ -15,8 +15,8 @@ const generateProgression = (progressionLegth) => {
 
 const buildQuestion = (progression, hidenElementIndex) => {
   let question = '';
-  for (const i of Object.keys(progression)) {
-    const element = i != hidenElementIndex ? progression[i] : '..';
+  for (let i = 0; i < progression.length; i += 1) {
+    const element = i !== parseInt(hidenElementIndex, 10) ? progression[i] : '..';
     question += `${element} `;
   }
   return question;

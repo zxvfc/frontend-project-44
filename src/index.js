@@ -2,7 +2,8 @@ import readlineSync from 'readline-sync';
 
 const runGame = (userName, description, questionsAndAnswers) => {
   console.log(description);
-  for (const [question, correctAnswer] of questionsAndAnswers) {
+  for (let i = 0; i < questionsAndAnswers; i += 1) {
+    const [question, correctAnswer] = questionsAndAnswers[i];
     console.log(`Question: ${question}`);
     const usersAnswer = readlineSync.question('Your answer: ');
     if (usersAnswer !== correctAnswer.toString()) {
